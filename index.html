@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Slider</h1>
+        <div class="slider">
+            <div class="slider__container">
+                <div class="slider__item active">
+                    <img src="img/1.jpg">
+                </div>
+                <div class="slider__item">
+                    <img src="img/2.jpg">
+                </div>
+                <div class="slider__item">
+                    <img src="img/3.jpg">
+                </div>
+                <div class="slider__item">
+                    <img src="img/4.jpg">
+                </div>
+                <div class="slider__item">
+                    <img src="img/5.jpg">
+                </div>
+            </div>
+            <div class="slider__control">
+                <button class="slider__prev" title="Previous image" onclick="sliderPrev(this)"><</button>
+                <button class="slider__next" title="Next image" onclick="sliderNext(this)">></button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

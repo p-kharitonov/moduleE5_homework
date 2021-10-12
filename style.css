@@ -1,0 +1,69 @@
+body {
+    margin: 0 10px;
+    padding: 0;
+}
+main {
+    width: 100%;
+    max-width: 1092px;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider__item {
+    display: none;
+    height: 350px;
+    text-align: center;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.slider__item img {
+    max-width: 100%;
+    height: 350px;
+}
+
+.slider__control {
+    margin: 6px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slider__control button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(80, 80, 80);
+    border: none;
+    transition: 0.1s;
+}
+
+.slider__control button:hover,
+.slider__control button:focus-visible {
+    background-color: rgb(120, 120, 120);
+    cursor: pointer;
+    border: none;
+}
+.slider__control button:active {
+    transform: scale(1.05);
+}
+
+.active {
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
